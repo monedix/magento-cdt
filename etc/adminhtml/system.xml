@@ -11,10 +11,6 @@
 					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
 				</field>
 
-				<field id="title" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="2" translate="label" type="hidden">
-					<label>Title</label>
-				</field>
-
 				<field id="api_key_production" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="9" translate="label" type="obscure">
 					<label>API Key Production</label>
 					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
