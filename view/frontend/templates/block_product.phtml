@@ -1,0 +1,14 @@
+<?php if($block->canShow()):?>
+
+    <div class="creditea-calc-msi">
+        <img loading="lazy" src="<?php echo $block->getBrandUrl()?>" alt="creditea"> Desde <?= $block->getPesosQuincenalesFormatted(); ?> pesos quincenales <a href="<?php echo $block->getUrlCreditea(); ?>" data-vbtype="iframe" data-customclass="popup-creditea" class="creditea-click">Ver Más</a>
+    </div>
+
+    <script>require(['jquery', 'creditea-venobox'], function($){$('a.creditea-click').venobox();});</script>
+
+    <style>
+        .venoframe.vbox-figlio {height: 90vh;}
+        .creditea-calc-msi {line-height:30px; padding: 5px 0px;}
+        .creditea-calc-msi > img {display:inline-block; width: 20px; vertical-align: middle;}
+    </style>
+<?php endif; ?>

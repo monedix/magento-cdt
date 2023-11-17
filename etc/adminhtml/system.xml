@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+			<group id="creditea_magento2" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="50" translate="label">
+				<label>Creditea</label>
+				<comment><![CDATA[<p>When you integrate Creditea as a payment method, offer your customers the possibility to obtain a line of credit to shop in your store and split their payments in up to 60 fortnights.</p><br/><h3>Disclaimer</h3><p>Creditea is only available for transactions made in Mexican Pesos.</p>]]></comment>
+				
+				<field id="active" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label" type="select">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+
+				<field id="title" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="2" translate="label" type="hidden">
+					<label>Title</label>
+				</field>
+
+				<field id="api_key_production" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="9" translate="label" type="obscure">
+					<label>API Key Production</label>
+					<backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+				</field>
+
+				<field id="sort_order" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="33" translate="label" type="text">
+					<label>Sort Order</label>
+				</field>
+			</group>
+		</section>
+    </system>
+</config>

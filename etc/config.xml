@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <payment>
+            <creditea_magento2>
+                <debug>0</debug>
+                <active>0</active>
+                <model>Creditea\Magento2\Model\CrediteaPayment</model>
+                <title>Paga con Creditea</title>
+                <payment_action>order</payment_action> 
+                <order_status>pending_payment</order_status>
+                <currency>MXN</currency>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_void>1</can_void>
+                <sandbox_mode>0</sandbox_mode>
+                <can_use_checkout>1</can_use_checkout>
+                <can_use_internal>0</can_use_internal>
+                <sort_order>1</sort_order>
+                <min_order_total>1000</min_order_total>
+                <max_order_total>70000</max_order_total>
+            </creditea_magento2>
+        </payment>
+    </default>
+</config>
